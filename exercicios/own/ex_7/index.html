@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 1</title>
+</head>
+<body>
+<!--
+campo de senha
+campo para escolher cor
+campo para escolher data
+campo para escolher hora
+campo para escolher data e hora
+campo para escolher mês
+campo para escolher semana
+campo para receber endereço de e-mail
+imagem como botão de submissão
+campo para enviar um único arquivo DOC
+campo para enviar vários arquivos PDF ou de imagens
+campo de entrada escondido - neste exemplo o valor é igual a 321
+campo para receber números inteiros
+campo para receber números inteiros entre 1 e 10
+campo para receber números com casas decimais
+campo de faixa de valores de 1 a 10 com salto de 2 a 2
+campo de pesquisa
+campo para entrada de número de telefone
+campo para entrada de URL
+Botão submit com imagem
+Lista de opções com agrupamento
+!-->
+<form action="" method="get">
+    <h2>Campo de senha</h2>
+    <input type="password" id="pwd" name="pwd">
+    <br>
+    <h2>Campo para escolher cor</h2>
+    <input type="color" id="color" name="color">
+    <br>
+    <h2>Campo para escolher data</h2>
+    <input type="date" id="date" name="date">
+    <br>
+    <h2>Campo para escolher hora</h2>
+    <input type="time" id="time" name="time">
+    <br>
+    <h2>Campo para escolher data e hora</h2>
+    <input type="datetime-local" id="datetime" name="datetime">
+    <br>
+    <h2>Campo para escolher mês</h2>
+    <input type="month" id="month" name="month">
+    <br>
+    <h2>Campo para escolher semana</h2>
+    <input type="week" id="week" name="week">
+    <br>
+    <h2>Campo para receber endereço de e-mail</h2>
+    <input type="email" id="email" name="email">
+    <br>
+    <h2>Imagem como botão de submissão</h2>
+    <input type="image" id="image" name="image" src="IBM.gif">
+    <br>
+    <h2>Campo para enviar um único arquivo DOC</h2>
+    <input type="file" id="file" name="file">
+    <br>
+    <h2>Campo para enviar vários arquivos PDF ou de imagens</h2>
+    <input type="file" id="files" name="files" multiple>
+    <br>
+    <h2>Campo de entrada escondido - neste exemplo o valor é igual a 321</h2>
+    <input type="hidden" id="hidden" name="hidden" value="321">
+    <br>
+    <h2>Campo para receber números inteiros</h2>
+    <input type="number" id="number" name="number">
+    <br>
+    <h2>Campo para receber números inteiros entre 1 e 10</h2>
+    <input type="number" id="number2" name="number2" min="1" max="10">
+    <br>
+    <h2>Campo para receber números com casas decimais</h2>
+    <input type="number" id="number3" name="number3" step="0.1">
+    <br>
+    <h2>Campo de faixa de valores de 1 a 10 com salto de 2 a 2</h2>
+    <input type="range" id="range" name="range" min="1" max="10" step="2">
+    <br>
+    <h2>Campo de pesquisa</h2>
+    <input type="search" id="search" name="search">
+    <br>
+    <h2>Campo para entrada de número de telefone</h2>
+    <input type="tel" id="tel" name="tel">
+    <br>
+    <h2>Campo para entrada de URL</h2>
+    <input type="url" id="url" name="url">
+    <br>
+    <h2>Botão submit com imagem</h2>
+    <input type="submit" id="submit" name="submit" value="Submit">
+    <br>
+    <h2>Campo</h2>
+    <select id="cars" name="cars">
+    <br>
+        <h2>Lista de opções com agrupamento</h2>
+        <optgroup label="Região Sudeste">
+            <option value="Minas Gerais">Minas Gerais</option>
+            <option value="São Paulo">São Paulo 🤮</option>
+        </optgroup>
+    </select>
+</form>
+</body>
+</html>

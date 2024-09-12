@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Listas e Tabelas</title>
+
+    <style>
+
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .casa {
+            list-style-image: url('casa.png');
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        h3 {
+            /*center;*/
+            text-align: center;
+            color: red;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        thead th {
+            background-color: green;
+            color: white;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        .total {
+            background-color: lightgray;
+            font-weight: bold;
+        }
+
+        .header {
+            background-color: transparent;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+<h2>Listas</h2>
+<ol>
+    <li>Na sala de estar:
+        <ul>
+            <li class="casa">Sofá</li>
+            <li class="casa">Rack</li>
+            <li class="casa">Televisão</li>
+        </ul>
+    </li>
+    <li>Na área de serviço:
+        <ul>
+            <li class="casa">Tanque</li>
+            <li class="casa">Máquina de lavar</li>
+            <li class="casa">Varal</li>
+        </ul>
+    </li>
+</ol>
+
+<h2>Tabelas</h2>
+
+<div>
+    <h3 class="">Tabela de Preço</h3>
+    <table>
+        <thead>
+        <tr class="header">
+            <th>Item</th>
+            <th>Produto</th>
+            <th>Valor</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>01</td>
+            <td>Tropete</td>
+            <td>500,00</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>Trombone</td>
+            <td>640,00</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>Trompa</td>
+            <td>650,00</td>
+        </tr>
+        <tr class="total">
+            <td colspan="2">Total</td>
+            <td>1790,00</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+</body>
+</html>

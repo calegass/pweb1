@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+    <script src="codigo.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Contatos</h1>
+    </header>
+
+    <section id="idListaContatos">
+        <ul id="idContatos">
+            <li class="classeItemContato">
+                <span class="classeContato">
+                    <input type="radio" id="1714994977618" name="contato" checked required>
+                    <label for="1714994977618">Contato 1</label>
+                </span>
+                <span class="classeBotaoRemover">remover</span>
+            </li>
+        </ul>
+    </section>
+
+    <section id="idAdicionaContato">
+        <form name="inserir" action="" method="get" id="idFormAdicionaContato">
+            <input type="text" id="idInsereNome" placeholder="Adicionar um Contato...">
+            <button id="idBotaoInserir" type="button" onclick="adicionarContato()">Inserir</button>
+        </form>
+    </section>
+
+    <section id="idExcluirContatos">
+        <button id="idBotaoExcluiContatos" type="button" onclick="excluirContatos()">Excluir do 1º contato até o selecionado.</button>
+    </section>
+
+    <footer>
+        <hr>
+        <ul class="classeGuias">
+            <li id="idLembrete1" class="classeAtivo" onclick="mudarLembrete(this)">Lembrete 01</li>
+            <li id="idLembrete2" onclick="mudarLembrete(this)">Lembrete 02</li>
+            <li id="idLembrete3" onclick="mudarLembrete(this)">Lembrete 03</li>
+        </ul>
+        <div class="classePainel classeAtivo" id="idDivLembrete1">
+            <p>Conteúdo do lembrete 01.</p>
+        </div>
+        <div class="classePainel" id="idDivLembrete2">
+            <p>Conteúdo do lembrete 02.</p>
+        </div>
+        <div class="classePainel" id="idDivLembrete3">
+            <p>Conteúdo do lembrete 03.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
